@@ -1,0 +1,608 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.body-grid {
+    display: grid;
+    /* grid-template-areas:  
+     "header header header"
+     "main   main   main"
+     "footer footer footer"; */
+    grid-template-rows: 100px 700px 100px ;
+}
+
+.fondo {
+    background-color: black;
+    
+}
+
+.headers1{
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px;
+    background-color: dimgray;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.logo-img:hover {
+    background-color: white;
+    zoom: 120%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.nav-link:hover {
+    color: aqua;
+}
+
+.main {
+    padding: 50px 180px 0px 180px;
+    margin: 0px auto;
+    font-family: arial;
+    font-weight: bolder;
+    max-width: 1200px;
+}
+
+.main__content { 
+    font-size: 90px;
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.fotos__main {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    padding-top: 60px;
+    justify-content: center;
+    gap: 100px;
+}
+
+.card-fotos {
+    background-color: lightgrey;
+    width: 300px;
+    height: 340px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    padding-top: 5px;
+}
+
+.card-fotos:hover {
+    background-color: goldenrod;
+    zoom: 115%;
+}
+
+.card-fotos--text {
+    text-align: center;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    position: fixed;
+    border: solid black;
+    right: 30px;
+    bottom: 20px;
+    padding: 10px 5px 10px 5px;
+    background-color: blue;
+    width: 140px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.footer {
+    padding: 30px 20px;
+}
+
+.footer__content {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5,100px);
+    justify-content: center;
+}
+
+/* ARTISTAS */
+
+.body-grid--artistas {
+    display: grid;
+    /* grid-template-areas:  
+     "header header header"
+     "main   main   main"
+     "footer footer footer"; */
+    grid-template-rows: 100px 850px 100px ;
+}
+
+.fondo-artistas {
+    background-image: url(./fotos/fondoartistas.jpg);
+}
+
+.main-artistas {
+    list-style-type: none;
+    color: lightgray;   
+}
+
+.titulo-art {
+    font-size: 90px;
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.subt-art {
+    font-size: 50px;
+    display: flex;
+    padding: 50px 50px 80px 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: center;
+    text-align: center;
+    color: lightgray;
+}
+
+
+
+.barra-buscadora {
+    display: flex;
+    justify-content: flex-end;
+    width: 95%;
+}
+
+.barra-buscadora label {
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+}
+
+.barra-buscadora  input {
+    height: 37px;
+}
+
+.cartelera-artistas {
+    border: bisque solid 1px; 
+}
+
+.cartelera-artistas ul {
+    color: lightgray;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 50px;
+    list-style-type: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.cartelera-artistas ul a {
+    text-decoration: none;
+    color: lightgray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+/* QUIENES SOMOS  */
+
+.body-grid--quienes {
+    display: grid;
+    /* grid-template-areas:  
+     "header header header"
+     "main   main   main"
+     "footer footer footer"; */
+    grid-template-rows: 100px 1050px 100px ;
+}
+
+.fondo-quienes {
+    background-color: gray;
+    background-image: url(./fotos/quienessomosfondo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backface-visibility: visible;
+}
+
+.main__content__quienes { 
+    font-size: 90px;
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+#layout-quienes {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 450px;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+
+.descripcion {
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:lightgray;
+    padding-bottom: 50px;
+    text-align: center; 
+    margin: 10px;
+    border: 1px solid red;
+}
+.descripcion:hover {
+    background-color: white;
+    color: black;
+}
+
+#imagen-nosotras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+}
+
+/* FAQ */
+
+.fondo-faq {
+    background-color: gray;
+    background-image: url(./fotos/fondos1.jpeg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    backface-visibility: visible;
+}
+
+.header__content--faq  {
+    text-decoration:overline underline;
+    color:bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    justify-content: space-between;
+    padding-left: 70px;
+}
+
+.titulo-faq {
+    font-size: 90px;
+    color: lightgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.preguntas {
+    list-style-type: none;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    line-height: 50px;
+    padding-bottom: 70px;
+    border: lightgray solid 4px;
+}
+
+.preguntas li {
+    color: deeppink;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+.preguntas p {
+    color: bisque;
+    margin-left: 50px;
+}
+
+.field-contact {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: bisque;
+    font-weight: bolder;
+}
+
+.barras-contacto {
+    height: 30px;
+    width: 120px;
+}
+
+.rectangulo1 {
+    padding: 5px;
+    margin-left: 19px;
+}
+
+.rectangulo2 {
+    padding: 5px;
+    margin-left: 47px;
+}
+
+.body-grid--faq {
+    display: grid;
+    /* grid-template-areas:  
+     "header header header"
+     "main   main   main"
+     "footer footer footer"; */
+    grid-template-rows: 100px 1050px 100px ;
+}
+
+/* ARTISTA 1 */
+
+.fondo-artista1 {
+    background-color: black;
+    backface-visibility: visible;
+}
+
+.nav-link1{
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.nav-link1:hover {
+    color: aqua;
+}
+
+#main-artista1 {
+    grid-area: main;
+}
+
+#titulo-artista1 {
+    font-size: 80px;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    text-decoration: underline;
+    padding: 50px 50px 80px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#subt-artista1 {
+    color: lightgray;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.img-aveta {
+    border: yellowgreen solid 3px;
+} 
+
+.iframe-aveta {
+    border: red solid 3px;
+    
+}
+
+#fotos__artista1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.body-grid--art1 {
+    display: grid;
+    /* grid-template-areas:  
+     "header header header"
+     "main   main   main"
+     "footer footer footer"; */
+    grid-template-rows: 100px 1300px 100px ;
+}
+
+.articulos {
+    display: grid;
+    justify-content: center;
+}
+
+
+/* RESPONSIVE */
+
+/* INDEX RESPONSIVE */
+
+@media (max-width:768px) {
+    .body-grid {
+        grid-template-rows: 100px 2100px 100px ;
+    }
+    .headers1 {
+        flex-direction: column;
+    }
+    .nav-link {
+        font-size: 30px;
+    }
+    .logo-header {
+        padding-bottom: 10px;
+        zoom: 130%;
+    }
+    .main__content {
+        text-align: center ;
+        font-size: 60px;
+        padding-top: 10px;
+    }
+    .fotos__main {
+        display: grid;
+        grid-template-columns: 200px;
+        zoom: 170%;
+        gap: 10px;
+        justify-content: start;
+        padding-top: 30px;
+    }
+    .card-fotos {
+        justify-self: center;
+    }
+}
+
+
+/* RESPONSIVE ARTISTAS */
+
+@media (max-width:768px) {
+    .titulo-art {
+        font-size: 50px;
+        display: flex;
+        align-items: flex-end;
+        padding: 100px 90px 20px 90px;
+    }
+
+    .main-artistas {
+        display: grid;
+        grid-template-rows: 0px;
+    }
+
+    .subt-art {
+        font-size: 40px;
+        display: flex;
+        align-items: flex-end;
+        padding: 50px 40px 20px 40px;
+    }
+
+    .barra-buscadora input {
+        height: 40px;
+    }
+
+    .barra-buscadora button {
+        height: 40px;
+    }
+
+    .barra-buscadora label {
+        font-size: 25px;
+    }
+}
+
+/* RESPONSIVE QUIENES SOMOS */
+
+@media (max-width:768px){
+
+    .body-grid--quienes {
+        grid-template-rows: 100px 1150px 100px ;
+    }
+
+    .main__content__quienes {
+        font-size: 70px;
+        display: flex;
+        align-items: flex-end;
+        padding: 50px 90px 20px 90px;
+    }
+
+    .descripcion {
+    font-size: 21px;
+    }
+}    
+    @media (min-width:768px) {
+        .descripcion {
+            overflow: scroll;
+        }
+    }
+/* RESPONSIVE FAQ */
+
+@media (max-width:768px) {
+    
+    .body-grid--faq {
+        grid-template-rows: 100px 1300px 100px ;
+    }
+
+    .titulo-faq {
+        font-size: 70px;
+        display: flex;
+        align-items: flex-end;
+        padding: 50px 90px 20px 90px;
+        
+    }
+
+    .preguntas {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .nav-link {
+        font-size: 25px;
+    }
+
+    .field-contact {
+        font-size: 20px;
+    }
+}
+
+/* ARTISTA 1 */
+
+@media (max-width:768px) {
+
+    .nav-link1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    #titulo-artista1 {
+        font-size: 70px;
+        text-align: center;
+        align-items: center;
+        padding: 80px 90px 20px 90px;
+    }
+
+    #subt-artista1 {
+        font-size: 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+    }
+
+    #fotos__artista1 {
+        display: inline;
+        zoom: 80%;
+        gap: 20px;
+        justify-items: center;
+        padding-top: 30px;
+        width: 100%;
+    }
+
+    .img-aveta {
+        zoom: 70%;
+        display: grid;
+    }
+
+    .iframe-aveta {
+        zoom: 70%;
+        display: grid;
+    }
+
+    .body-grid--art1 {
+        display: grid;
+        /* grid-template-areas:  
+         "header header header"
+         "main   main   main"
+         "footer footer footer"; */
+        grid-template-rows: 100px 1700px 100px ;
+    }
+
+    .articulos {
+        justify-content: space-around;
+        gap: 30px;
+    }
+}
