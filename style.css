@@ -474,6 +474,7 @@
     .main-artistas {
         display: grid;
         grid-template-rows: 0px;
+        margin-top: 5rem;
     }
 
     .subt-art {
