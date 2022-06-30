@@ -442,6 +442,11 @@
         padding-bottom: 10px;
         zoom: 130%;
     }
+
+    .main {
+        margin-top: 5rem;
+    }
+
     .main__content {
         text-align: center ;
         font-size: 60px;
@@ -474,6 +479,7 @@
     .main-artistas {
         display: grid;
         grid-template-rows: 0px;
+        margin-top: 5rem;
     }
 
     .subt-art {
@@ -504,6 +510,10 @@
         grid-template-rows: 100px 1150px 100px ;
     }
 
+    .main-quienes {
+        margin-top: 5rem;
+    }
+
     .main__content__quienes {
         font-size: 70px;
         display: flex;
@@ -526,6 +536,10 @@
     
     .body-grid--faq {
         grid-template-rows: 100px 1300px 100px ;
+    }
+
+    .main-faq {
+        margin-top: 5rem;
     }
 
     .titulo-faq {
@@ -557,6 +571,10 @@
     .nav-link1 {
         font-size: 20px;
         padding: 10px;
+    }
+
+    .main-art1 {
+        margin-top: 5rem;
     }
 
     #titulo-artista1 {
