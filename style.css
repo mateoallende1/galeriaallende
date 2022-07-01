@@ -446,11 +446,11 @@ div.fotos__main {
 @media (max-width:768px) {
     
     body {
-        width: 100vw;
+        width: 100%;
     }
 
     .fondo {
-        width: 100vw;
+        width: 100%;
     }
 
     .body-grid {
@@ -473,17 +473,15 @@ div.fotos__main {
 
     main.main {
         margin-top: 7rem;
-        width: 100vw;
-    }
-    .main__content{
-        width: 100vw;
-    }
-
-    h1.main__content {
-        text-align: center ;
-        font-size: 50px;
-        padding-top: 10px;
         width: 100%;
+    }
+    
+    
+    h1.main__content {
+        font-size: 60px;
+        display: flex;
+        align-items: flex-end;
+        padding: 50px 90px 20px 90px;
         
     }
     div.fotos__main {
@@ -508,11 +506,10 @@ div.fotos__main {
 
     .card {
         position: fixed;
-        left: 100%;
     }
+
+
 }
-
-
 /* RESPONSIVE ARTISTAS */
 
 @media (max-width:768px) {
@@ -580,12 +577,12 @@ div.fotos__main {
     }
 
     .main-quienes {
-        margin-top: 10rem;
+        margin-top: 5rem;
         width: 100vw;
     }
 
     .main__content__quienes {
-        font-size: 70px;
+        font-size: 60px;
         display: flex;
         align-items: flex-end;
         padding: 50px 90px 20px 90px;
@@ -622,12 +619,12 @@ div.fotos__main {
     }
 
     .main-faq {
-        margin-top: 10rem;
+        margin-top: 5rem;
         width: 100vw;
     }
 
     .titulo-faq {
-        font-size: 70px;
+        font-size: 60px;
         display: flex;
         align-items: flex-end;
         padding: 50px 90px 20px 90px;
