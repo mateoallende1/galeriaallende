@@ -455,44 +455,65 @@ div.fotos__main {
     }
 
     .body-grid {
-        grid-template-rows: 100px auto 100px ;
+        grid-template-rows: 170px auto 100px ;
         width: 100%;
         display: grid;
         justify-content: center;
     }
+
+   
+
     .headers1 {
-        flex-direction: column;
-        width: 100vw;
+        display: flex;
+        width: 100%;
     }
-    .nav-link {
-        font-size: 25px;
-        width: 100vw;
+    a.nav-link {
+        /* font-size: 5vw;
+        width: 100%;
+        display: flex;
+        /* justify-content: flex-start; */
+        /* position: relative;
+        right: 40%; */ 
+            font-size: 5vw;
+            width: 100%;
+            display: flex;
+            /* justify-content: flex-start; */
+            /* position: relative; */
+            right: 40%;
     }
 
 
-    .logo-header {
+    a.logo-header {
         padding-bottom: 10px;
-        zoom: 130%;
+        zoom: 80%;
+        position: relative;
+    }
+
+    a.logo-header1 {
+        padding-bottom: 10px;
+        zoom: 80%;
+        position: relative;
+        margin: 40px;
     }
 
     main.main {
-        margin-top: 7rem;
+        margin-top: 3rem;
         width: 100%;
     }
     
     
-    /* h1.main__content {
-        font-size: 10vw;
+    h1.main__content {
+        font-size: 15vw;
         display: flex;
         align-items: flex-end;
-        padding: 50px 90px 20px 90px;
+        padding: 5px 90px 20px 90px;
         width:100%;
         
-    } */
+    }
 
     main.main h1 {
-        font-size: 15vw;
-        font-family: 'Courier New', Courier, monospace;
+        
+        
     }
 
     div.fotos__main {
@@ -509,6 +530,11 @@ div.fotos__main {
         justify-self: center;
     }
 
+    article a img {
+        width: 100%;
+        display: block;
+    }
+
     .footer {
         width: auto;
         zoom: 100%;
@@ -523,6 +549,8 @@ div.fotos__main {
 
     .card {
         position: fixed;
+        margin-bottom: 55px;
+        border-radius: 10px;
     }
 
 
@@ -545,7 +573,7 @@ div.fotos__main {
          "header header header"
          "main   main   main"
          "footer footer footer"; */
-        grid-template-rows: 100px auto 100px ;
+        grid-template-rows: 170px auto 100px ;
     }
     .main-artistas {
         display: grid;
@@ -584,12 +612,12 @@ div.fotos__main {
 
 @media (max-width:768px){
 
-    .fondo-quienes {
+    /* .fondo-quienes {
         width: 100vw;
-    }
+    } */
 
     .body-grid--quienes {
-        grid-template-rows: 100px auto 100px ;
+        grid-template-rows: 170px auto 100px ;
         width: 100vw;
     }
 
@@ -602,7 +630,7 @@ div.fotos__main {
         font-size: 60px;
         display: flex;
         align-items: flex-end;
-        padding: 50px 90px 20px 90px;
+        padding: 20px 90px 60px 90px;
     }
 
     div.imagen-nosotras img {
@@ -631,20 +659,20 @@ div.fotos__main {
 @media (max-width:768px) {
     
     .body-grid--faq {
-        grid-template-rows: 100px auto 100px ;
+        grid-template-rows: 170px auto 100px ;
         width: 100vw;
     }
 
     .main-faq {
-        margin-top: 5rem;
+        margin-top: 3rem;
         width: 100vw;
     }
 
     .titulo-faq {
-        font-size: 60px;
+        font-size: 14vw;
         display: flex;
         align-items: flex-end;
-        padding: 50px 90px 20px 90px;
+        padding: 10px 90px 20px 90px;
         width: 100vw;
         
     }
@@ -655,10 +683,10 @@ div.fotos__main {
         width: 100vw;
     }
 
-    .nav-link {
+    /* .nav-link {
         font-size: 25px;
         width: 100vw;
-    }
+    } */
 
     .field-contact {
         font-size: 20px;
