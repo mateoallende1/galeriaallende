@@ -19,7 +19,7 @@ body {
 }
 
 .fondo {
-    background-color: black;
+    background-image: radial-gradient(darkgray, black);
     
 }
 
@@ -74,7 +74,7 @@ body {
 } */
 
 h1.main__content { 
-    font-size: 90px;
+    font-size: 50px;
     color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
     font-style: oblique;
@@ -83,6 +83,17 @@ h1.main__content {
     text-align: center;
     padding-left: 200px;
     padding-right: 200px;
+    animation: indexTitulo 5s;
+}
+
+@keyframes indexTitulo {
+    0% {
+        transform: scale(0.5);
+        
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 div.fotos__main {
@@ -92,7 +103,16 @@ div.fotos__main {
     justify-content: center;
     gap: 100px;
     width: 100%;
-    
+    animation: indexFotos 5s;
+}
+
+@keyframes indexFotos {
+    0% {
+        transform: rotate(0deg) scale(0.5);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
 }
 
 .card-fotos {
@@ -153,7 +173,7 @@ div.fotos__main {
 }
 
 .fondo-artistas {
-    background-image: url(./fotos/fondoartistas.jpg);
+    background-image: radial-gradient(black, darkgray);
 }
 
 .main-artistas {
@@ -162,7 +182,7 @@ div.fotos__main {
 }
 
 .titulo-art {
-    font-size: 90px;
+    font-size: 50px;
     color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
     font-style: oblique;
@@ -172,7 +192,7 @@ div.fotos__main {
 }
 
 .subt-art {
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     padding: 50px 50px 80px 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -201,6 +221,16 @@ div.fotos__main {
 
 .cartelera-artistas {
     border: bisque solid 1px; 
+    animation: cartArt 3s;
+}
+
+@keyframes cartArt {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .cartelera-artistas ul {
@@ -455,7 +485,7 @@ div.fotos__main {
     }
 
     .body-grid {
-        grid-template-rows: 170px auto 100px ;
+        grid-template-rows: 130px auto 100px ;
         width: 100%;
         display: grid;
         justify-content: center;
@@ -503,7 +533,7 @@ div.fotos__main {
     
     
     h1.main__content {
-        font-size: 15vw;
+        font-size: 10vw;
         display: flex;
         align-items: flex-end;
         padding: 5px 90px 20px 90px;
@@ -511,10 +541,7 @@ div.fotos__main {
         
     }
 
-    main.main h1 {
-        
-        
-    }
+
 
     div.fotos__main {
         display: grid;
@@ -559,10 +586,10 @@ div.fotos__main {
 
 @media (max-width:768px) {
     .titulo-art {
-        font-size: 50px;
+        font-size: 10vw;
         display: flex;
         align-items: flex-end;
-        padding: 100px 90px 20px 90px;
+        padding: 70px 90px 20px 90px;
         width: auto;
         
     }
@@ -573,17 +600,17 @@ div.fotos__main {
          "header header header"
          "main   main   main"
          "footer footer footer"; */
-        grid-template-rows: 170px auto 100px ;
+        grid-template-rows: 130px auto 100px ;
     }
     .main-artistas {
         display: grid;
         grid-template-rows: 0px;
-        margin-top: 10rem;
+        margin-top: 1rem;
         width: auto;
     }
 
     .subt-art {
-        font-size: 40px;
+        font-size: 5vw;
         display: flex;
         align-items: flex-end;
         padding: 50px 40px 20px 40px;
@@ -604,7 +631,12 @@ div.fotos__main {
     }
 
     .barra-buscadora label {
-        font-size: 25px;
+        font-size: 5vw;
+    }
+
+    .cartelera-artistas li {
+        font-size: 4vw;
+        line-height: 10vw;
     }
 }
 
