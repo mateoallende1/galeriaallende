@@ -256,20 +256,15 @@ div.fotos__main {
      "header header header"
      "main   main   main"
      "footer footer footer"; */
-    grid-template-rows: 100px 1050px 100px ;
+    grid-template-rows: 100px auto 100px ;
 }
 
 .fondo-quienes {
-    background-color: gray;
-    background-image: url(./fotos/quienessomosfondo.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    backface-visibility: visible;
+    background-image: linear-gradient(60deg, black, darkgray);
 }
 
 .main__content__quienes { 
-    font-size: 90px;
+    font-size: 50px;
     color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
     font-style: oblique;
@@ -283,22 +278,23 @@ div.fotos__main {
 #layout-quienes {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 450px;
+    grid-template-rows: 200px;
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
     overflow: hidden;
+    animation: fotoQuienes 4s;
 }
 
 
 .descripcion {
-    font-size: 23px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color:lightgray;
     padding-bottom: 50px;
     text-align: center; 
     margin: 10px;
-    border: 1px solid red;
+    border: 1px solid white;
 }
 .descripcion:hover {
     background-color: white;
@@ -310,17 +306,22 @@ div.fotos__main {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     gap: 10px;
+    animation: fotoQuienes 4s;
+}
+
+@keyframes fotoQuienes {
+    0% {
+        filter: blur(1.5rem);
+    }
+    100% {
+        filter: blur(0);
+    }
 }
 
 /* FAQ */
 
 .fondo-faq {
-    background-color: gray;
-    background-image: url(./fotos/fondos1.jpeg);
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-    backface-visibility: visible;
+    background-image: radial-gradient(darkgray 10% 30%,black);
 }
 
 .header__content--faq  {
@@ -334,7 +335,7 @@ div.fotos__main {
 }
 
 .titulo-faq {
-    font-size: 90px;
+    font-size: 50px;
     color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
     font-style: oblique;
@@ -347,27 +348,37 @@ div.fotos__main {
 
 .preguntas {
     list-style-type: none;
-    font-size: 30px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    line-height: 50px;
-    padding-bottom: 70px;
+    line-height: 40px;
+    padding-bottom: 10px;
     border: lightgray solid 4px;
 }
 
 .preguntas li {
     color: deeppink;
     text-decoration: underline;
-    margin-left: 20px;
+    margin-left: 18px;
 }
 
 .preguntas p {
     color: bisque;
     margin-left: 50px;
+    animation: preguntas 3s;
+}
+
+@keyframes preguntas {
+    0% {
+        transform: translateX(700px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 .field-contact {
-    font-size: 30px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     color: bisque;
     font-weight: bolder;
@@ -394,7 +405,7 @@ div.fotos__main {
      "header header header"
      "main   main   main"
      "footer footer footer"; */
-    grid-template-rows: 100px 1050px 100px ;
+    grid-template-rows: 100px auto 100px ;
 }
 
 /* ARTISTA 1 */
@@ -654,12 +665,12 @@ div.fotos__main {
     }
 
     .main-quienes {
-        margin-top: 5rem;
+        margin-top: 2rem;
         width: 100vw;
     }
 
     .main__content__quienes {
-        font-size: 60px;
+        font-size: 10vw;
         display: flex;
         align-items: flex-end;
         padding: 20px 90px 60px 90px;
@@ -670,7 +681,7 @@ div.fotos__main {
     }
 
     .descripcion {
-    font-size: 21px;
+    font-size: 3vw;
     overflow: scroll;
     width: 100%;
     }
@@ -701,7 +712,7 @@ div.fotos__main {
     }
 
     .titulo-faq {
-        font-size: 14vw;
+        font-size: 10vw;
         display: flex;
         align-items: flex-end;
         padding: 10px 90px 20px 90px;
@@ -710,7 +721,7 @@ div.fotos__main {
     }
 
     .preguntas {
-        font-size: 20px;
+        font-size: 5vw;
         line-height: 30px;
         width: 100vw;
     }
