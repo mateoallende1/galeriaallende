@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+}
+
 .body-grid {
     display: grid;
     /* grid-template-areas:  
@@ -25,6 +29,7 @@
     font-weight: bold;
     align-items: center;
     padding: 10px;
+    width: 100vw;
 }
 
 .logo-header {
@@ -79,6 +84,7 @@
     padding-top: 60px;
     justify-content: center;
     gap: 100px;
+    
 }
 
 .card-fotos {
@@ -259,7 +265,7 @@
     color: black;
 }
 
-#imagen-nosotras {
+.imagen-nosotras {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
@@ -429,39 +435,66 @@
 /* INDEX RESPONSIVE */
 
 @media (max-width:768px) {
+    
+    html {
+        width: 100%
+    }
+    body {
+        width: 100vw;
+    }
+
+    .fondo {
+        width: 100vw;
+    }
+
     .body-grid {
-        grid-template-rows: 100px 2100px 100px ;
+        grid-template-rows: 100px auto 100px ;
     }
     .headers1 {
         flex-direction: column;
+        width: 100vw;
     }
     .nav-link {
-        font-size: 30px;
+        font-size: 25px;
+        width: 100vw;
     }
+
+
     .logo-header {
         padding-bottom: 10px;
         zoom: 130%;
     }
 
-    .main {
-        margin-top: 5rem;
+    main.main {
+        margin-top: 10rem;
+        width: auto;
     }
 
-    .main__content {
+    h1.main__content {
         text-align: center ;
-        font-size: 60px;
+        font-size: 100px;
         padding-top: 10px;
+        width: 100vw;
+        
     }
-    .fotos__main {
+    div.fotos__main {
         display: grid;
-        grid-template-columns: 200px;
+        grid-template-columns: 0;
         zoom: 170%;
         gap: 10px;
-        justify-content: start;
+        justify-content: center;
         padding-top: 30px;
+        padding-right: 50px;
+        width: 100%;
     }
     .card-fotos {
         justify-self: center;
+    }
+
+    .footer {
+        width: auto;
+        zoom: 100%;
+        justify-content: center;
     }
 }
 
@@ -474,12 +507,23 @@
         display: flex;
         align-items: flex-end;
         padding: 100px 90px 20px 90px;
+        width: auto;
+        
     }
 
+    .body-grid--artistas {
+        display: grid;
+        /* grid-template-areas:  
+         "header header header"
+         "main   main   main"
+         "footer footer footer"; */
+        grid-template-rows: 100px auto 100px ;
+    }
     .main-artistas {
         display: grid;
         grid-template-rows: 0px;
-        margin-top: 5rem;
+        margin-top: 10rem;
+        width: auto;
     }
 
     .subt-art {
@@ -487,6 +531,12 @@
         display: flex;
         align-items: flex-end;
         padding: 50px 40px 20px 40px;
+        width: auto;
+        margin-top: 5rem;
+    }
+
+    body.fondo-artistas {
+        width: 100vw;
     }
 
     .barra-buscadora input {
@@ -506,12 +556,18 @@
 
 @media (max-width:768px){
 
+    .fondo-quienes {
+        width: 100vw;
+    }
+
     .body-grid--quienes {
-        grid-template-rows: 100px 1150px 100px ;
+        grid-template-rows: 100px auto 100px ;
+        width: 100vw;
     }
 
     .main-quienes {
-        margin-top: 5rem;
+        margin-top: 10rem;
+        width: 100vw;
     }
 
     .main__content__quienes {
@@ -521,8 +577,20 @@
         padding: 50px 90px 20px 90px;
     }
 
+    div.imagen-nosotras img {
+        width: 100vw;
+    }
+
     .descripcion {
     font-size: 21px;
+    overflow: scroll;
+    width: 100%;
+    }
+
+    .imagen-nosotras {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }    
     @media (min-width:768px) {
@@ -535,11 +603,13 @@
 @media (max-width:768px) {
     
     .body-grid--faq {
-        grid-template-rows: 100px 1300px 100px ;
+        grid-template-rows: 100px auto 100px ;
+        width: 100vw;
     }
 
     .main-faq {
-        margin-top: 5rem;
+        margin-top: 10rem;
+        width: 100vw;
     }
 
     .titulo-faq {
@@ -547,20 +617,24 @@
         display: flex;
         align-items: flex-end;
         padding: 50px 90px 20px 90px;
+        width: 100vw;
         
     }
 
     .preguntas {
         font-size: 20px;
         line-height: 30px;
+        width: 100vw;
     }
 
     .nav-link {
         font-size: 25px;
+        width: 100vw;
     }
 
     .field-contact {
         font-size: 20px;
+        width: 100vw;
     }
 }
 
@@ -569,12 +643,14 @@
 @media (max-width:768px) {
 
     .nav-link1 {
-        font-size: 20px;
+        font-size: 25px;
         padding: 10px;
+        width: 100vw;
     }
 
     .main-art1 {
         margin-top: 5rem;
+        width: 100vw;
     }
 
     #titulo-artista1 {
@@ -582,6 +658,7 @@
         text-align: center;
         align-items: center;
         padding: 80px 90px 20px 90px;
+        width: 100vw;
     }
 
     #subt-artista1 {
@@ -589,25 +666,28 @@
         padding-left: 40px;
         padding-right: 40px;
         text-align: center;
+        width: 100vw;
     }
 
     #fotos__artista1 {
         display: inline;
-        zoom: 80%;
+        zoom: 100%;
         gap: 20px;
         justify-items: center;
         padding-top: 30px;
-        width: 100%;
+        width: 100vw;
     }
 
     .img-aveta {
-        zoom: 70%;
+        zoom: 100%;
         display: grid;
+        width: 100vw;
     }
 
     .iframe-aveta {
-        zoom: 70%;
+        zoom: 100%;
         display: grid;
+        width: 100vw;
     }
 
     .body-grid--art1 {
@@ -616,7 +696,7 @@
          "header header header"
          "main   main   main"
          "footer footer footer"; */
-        grid-template-rows: 100px 1700px 100px ;
+        grid-template-rows: 100px auto 100px ;
     }
 
     .articulos {
