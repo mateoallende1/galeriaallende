@@ -589,6 +589,7 @@ div.fotos__main {
         position: fixed;
         margin-bottom: 55px;
         border-radius: 10px;
+        
     }
 
 
@@ -678,6 +679,8 @@ div.fotos__main {
 
     div.imagen-nosotras img {
         width: 100vw;
+        display: inline;
+        justify-self: center;
     }
 
     .descripcion {
@@ -803,3 +806,9 @@ div.fotos__main {
         gap: 30px;
     }
 }
+
+
+ 
+
+
+

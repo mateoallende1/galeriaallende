@@ -1,0 +1,9 @@
+   /* BOOTSTRAP */
+
+:root {
+    --bs-blue: #0d6efd;
+}
+
+body {
+    background-image: radial-gradient(black, darkgray);
+}
