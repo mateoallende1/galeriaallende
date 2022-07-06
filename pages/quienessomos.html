@@ -1,45 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes Somos?</title>
-    <link rel="icon" href="../fotos/abre.png">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../style1.css">
 </head>
-<body class="fondo-quienes body-grid--quienes">
-    <header class="headers1">
-        <a href="../index.html" class="logo-header">
-           <img src="../fotos/abre.png" alt="logo abre" class="logo-img">
-        </div>
-        </a>
-            <nav>
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="./artistas.html"  class="nav-link">Artistas</a>
-                <a href="./faq.html" class="nav-link">FAQ</a>
-            </nav>
+<body class="body-boot__qs">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container" >
+              <a class="navbar-brand" href="../index.html"><img src="../fotos/abre.png" alt="Logo" height="80px" width="
+                100px" style="background-color:lightgray; border-radius: 20px; border: solid white;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color:white"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav" >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" style="color:gray" href="../pages/quienessomos.html">Quienes somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color:white" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color:white" href="../pages/artistas.html">Artistas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color:white" href="../pages/faq.html">FAQ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main class="main-quienes">
-        <h1 class="main__content__quienes">ABRE GALERÍA DE ARTE</h1>
-        <section>
-            <article>
-                    <div id="layout-quienes">
-                        <p class="descripcion">Somos una galería de arte fundada en 2017 por Lourdes y Luz. Nos consideramos una galería nómade ya que nunca estamos exhibiendo en el mismo lugar.</p>    
-                        <p class="descripcion">Contamos con dos espacios para exhibiciones, uno ubicado en Villa Allende y el otro en la zona de Nueva Córdoba. 
-                        Nos caracteriza que son dos lugares totalmente domésticos, 100% adaptados por nosotras con el fin de que se parezca lo máximo posible a un lugar de exhibiciones pero sin que pierda la escencia casera, lo cual hace que la visita de los amantes del arte sea mucho mas personalizada y puedan llegar a tener mayor contacto con los distintos artistas.</p>
-                        <p class="descripcion">A lo largo de nuestra corta pero enriquecedora carrera, podemos decir que hemos tenido presencia internacional, en lugares como Miami en la feria Art Basel y en Milan en la feria del deiseño. Nuestros artistas tienen tal proyección que creemos que tendremos muchas mas exhibiciones en el extranjero.</p>
-                        
-                    </div>
-            </article>
-        </section>
-            <div class="imagen-nosotras">
-                <img src="../fotos/fotosquienessomos.jpeg" alt="Foto de quienes somos" width="500" height="400"> 
-                <img src="../fotos/quienessomos2.jpeg" alt="quienes somos 2" width="500" height="400">
-            </div>         
+    <main>
+        <div class="container text-white  fw-bold pb-5">
+            <div class="row">
+              <div class="border border-secondary p-2 mb-2 col-sm-12 col-md-6 col-lg-4">Somos una galería de arte fundada en 2017 por Lourdes y Luz. Nos consideramos una galería nómade ya que nunca estamos exhibiendo en el mismo lugar.</div>
+              <div class="border border-secondary p-2 mb-2 col-sm-12 col-md-6 col-lg-4">Contamos con dos espacios para exhibiciones, uno ubicado en Villa Allende y el otro en la zona de Nueva Córdoba. 
+                Nos caracteriza que son dos lugares totalmente domésticos, 100% adaptados por nosotras con el fin de que se parezca lo máximo posible a un lugar de exhibiciones pero sin que pierda la escencia casera, lo cual hace que la visita de los amantes del arte sea mucho mas personalizada y puedan llegar a tener mayor contacto con los distintos artistas.</div>
+                <div class="border border-secondary p-2 mb-2 col-sm-12 col-md-6 col-lg-4">A lo largo de nuestra corta pero enriquecedora carrera, podemos decir que hemos tenido presencia internacional, en lugares como Miami en la feria Art Basel y en Milán en la feria del diseño. Nuestros artistas tienen tal proyección que creemos que tendremos muchas más exhibiciones en el extranjero.</div>
+            </div>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide container pb-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../fotos/quienessomos2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../fotos/fotosquienessomos.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
-    <footer class="footer"> <!-- link a redes sociales -->
-        <ol class="footer__content">
+    <footer class=" container-fluid pb-2 pt-4"> 
+        <ol> 
             <li><a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener"><img src="../fotos/logofb1.jpeg" alt="facebook" height="35px" width="35px"></a></li>
             <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener"><img src="../fotos/insta-logo.png" height="35px" width="35px" alt="instagram"></a></li>
             <li><a href="https://www.gmail.com" target="_blank" rel="noreferrer noopener"><img src="../fotos/gmail-logo.jpeg" height="35px" width="35px" alt="gmail"></a></li>

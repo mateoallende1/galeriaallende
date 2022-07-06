@@ -22,3 +22,11 @@ footer ol{
 .lista-artistas {
     text-decoration: none;
 }
+
+.body-boot__qs {
+    background-image: radial-gradient(darkgray, black);
+}
+
+.texto-qs {
+    color: white;
+}

@@ -1,48 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artistas</title>
     <link rel="icon" href="../fotos/abre.png">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../style1.css">
 </head>
-<body class="body-grid--artistas fondo-artistas">
-    <header class="headers1">
-        <a href="../index.html" class="logo-header">
-           <img src="../fotos/abre.png" alt="logo abre" class="logo-img">
-        </div>
-        </a>
-            <nav>
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="./quienessomos.html"  class="nav-link">Quienes Somos?</a>
-                <a href="./faq.html" class="nav-link">FAQ</a>
-            </nav>
-    </header>
-    <main class="main-artistas">
-        <h1 class="titulo-art">ARTISTAS</h1>
-        <h3 class="subt-art">Estos son los distintos artistas locales que se encuentran actualmente en nuestro portfolio.</h3>
-        <section class="barra-buscadora">
-            <label for="Buscar artistas">Buscar Artista:</label>
-            <input type="text" name="buscador" id="Buscar artistas">
-            <button type="submit">Buscar</button>
-        </section>
-        <section> 
-            <fieldset class="cartelera-artistas">
-                <ul>
-                    <li><a href="./artista1.html">Hugo Aveta</a></li>
-                    <li><a href="./artista2.html"> Majo Arrigoni</a></li>
-                    <li><a href="./artista3.html">Santiago Lena</a></li>
-                    <li>Raquel de Arteaga </li>
-                    <li>Paula Díaz</li>
-                    <li>Alejandro Utrera</li>
+<body class="body-boot">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container" >
+              <a class="navbar-brand" href="../index.html"><img src="../fotos/abre.png" alt="Logo" height="80px" width="
+                100px" style="background-color:lightgray; border-radius: 20px; border: solid black;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color:white"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav" >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" style="color:black" href="../pages/artistas.html">Artistas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color:white" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color:white" href="../pages/quienessomos.html">Quienes somos?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color:white" href="../pages/faq.html">FAQ</a>
+                  </li>
                 </ul>
-            </fieldset>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section>
+            <div class="textos-principales container pt-5">
+                <h1 class="display-1 ">ARTISTAS</h1>
+                <p class="lead pb-5">
+                    Estos son los distintos artistas locales que se encuentran actualmente en nuestro portfolio.
+                  </p>
+            </div>
         </section>
+
+            <nav class="navbar">
+                <div class="container-fluid" style="display:flex ; justify-content: flex-end">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light bg-dark" type="submit">Search</button>
+                  </form>
+                </div>
+            </nav> 
+            <div class="card" style="width: 100%;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item bg-dark"><a href="./artista1.html" class="text-white lista-artistas">Hugo Aveta</a></li>
+                  <li class="list-group-item bg-dark text-white"><a href="./artista2.html" class="text-white lista-artistas">Raquel de Arteaga</a></li>
+                  <li class="list-group-item bg-dark text-white"><a href="./artista3.html" class="text-white lista-artistas">Lourdes Carranza</a></li>
+                  <li class="list-group-item bg-dark text-white"><a href="" class="text-white lista-artistas">Paula Diaz</a></li>
+                  <li class="list-group-item bg-dark text-white"><a href="" class="text-white lista-artistas">Mario Manzi</a></li>
+                  <li class="list-group-item bg-dark text-white"><a href="" class="text-white lista-artistas">Majo Arrigoni</a></li>
+                  <li class="list-group-item bg-dark text-white"><a href="" class="text-white lista-artistas">Cacho Pinotti</a></li>
+                  <li class="list-group-item bg-dark text-white"><a href="" class="text-white lista-artistas">Gloria Sosa</a></li>
+                </ul>
+            </div>
+
+
     </main>
-    <footer class="footer"> <!-- link a redes sociales -->
-        <ol class="footer__content">
+
+    <footer class=" container-fluid pb-2 pt-4"> 
+        <ol> 
             <li><a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener"><img src="../fotos/logofb1.jpeg" alt="facebook" height="35px" width="35px"></a></li>
             <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener"><img src="../fotos/insta-logo.png" height="35px" width="35px" alt="instagram"></a></li>
             <li><a href="https://www.gmail.com" target="_blank" rel="noreferrer noopener"><img src="../fotos/gmail-logo.jpeg" height="35px" width="35px" alt="gmail"></a></li>
