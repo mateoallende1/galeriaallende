@@ -8,3 +8,17 @@ footer ol{
     justify-content: space-around;
 
 }
+
+.body-boot {
+    background-image: radial-gradient(black, darkgrey);
+    
+}
+
+.textos-principales {
+    text-align: center;
+    color: white;
+}
+
+.lista-artistas {
+    text-decoration: none;
+}
