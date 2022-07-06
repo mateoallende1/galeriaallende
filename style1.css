@@ -1,11 +1,10 @@
    /* BOOTSTRAP */
-
+footer {
+    height: 100px;
+}
 footer ol{
     display: flex; 
     list-style-type: none;
     justify-content: space-around;
-    /* padding-left: 300px;
-    padding-right: 300px; */
-    
 
 }
