@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería de arte 11</title>
+    <title>Galería de arte</title>
+    <link rel="icon" href="./fotos/abre.png">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style1.css">
@@ -40,39 +41,85 @@
     <main>
         <section class="text-white bg-dark">
             <div class="container pt-5" style="text-align: center">
-                <h1 class="display-1">ABRE GALERÍA DE ARTE</h1>
-                <p class="lead">
+                <h1 class="display-1 ">ABRE GALERÍA DE ARTE</h1>
+                <p class="lead pb-5">
                     Somos una galería de arte nómade ubicada en distintos lugares de Córdoba.
                   </p>
             </div>
         </section>
-        
-        <section class="container-fluid  bg-dark">
-            <div class="row g-4">
+        <section class="container-fluid bg-dark  pb-5 ">
+            <div class="row g-4"> 
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="card" style="width:18rem">
-                        <img src="./fotos/main2.jpeg" class="card-img-top" alt="foto hugo" height="250px">
+                    <article class="card bg-secondary">
+                        <img src="./fotos/main2.jpeg" class="card-img-top" alt="Imagen abet" height="250px" >
                         <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <a href="#" class="btn btn-primary">Hugo Aveta</a>
                           <p class="card-text">Fotógrafo internacional.</p>
                         </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
+                    </article>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <article class="card bg-secondary">
                         <img src="./fotos/majoarrigoni1.jpeg" class="card-img-top" alt="foto majo" height="250px">
                         <div class="card-body">
-                          <p class="card-text">Especialista en retratos.</p>
+                          <h5 class="card-title"></h5>
+                          <a href="#" class="btn btn-primary">Majo Arrigoni</a>
+                          <p class="card-text">Experta en retratos.</p>             
                         </div>
-                      </div>
-                      <div class="card" style="width: 18rem;">
-                        <img src="./fotos/santiagolena1.jpeg" class="card-img-top" alt="foto lena" height="250px">
+                    </article>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <article class="card bg-secondary">
+                        <img src="./fotos/santiagolena1.jpeg" class="card-img-top" alt="lena" height="250px">
                         <div class="card-body">
-                          <p class="card-text">Pintor y escultor.</p>
+                          <h5 class="card-title"></h5>
+                          <a href="#" class="btn btn-primary">Santiago Lena</a>
+                          <p class="card-text">Escultor profesional.</p>                      
                         </div>
-                    </div>
-                </div>  
+                    </article>
+                </div>
             </div>
         </section>
+        <!-- <section class="container-fluid  bg-dark">
+            
+            <div class="row g-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <article class="card" style="width:18rem">
+                        <img src="./fotos/main2.jpeg" class="card-img-top" alt="foto hugo" height="250px">
+                        <div class="card-body">
+                          <p class="card-text btn btn-secondary" >Fotógrafo internacional.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 g-4">    
+                    <div class="card" style="width: 18rem;">
+                        <img src="./fotos/majoarrigoni1.jpeg" class="card-img-top" alt="foto majo" height="250px">
+                        <div class="card-body">
+                          <p class="card-text btn btn-secondary">Especialista en retratos.</p>
+                        </div>
+                      </div>
+                    </div>  
+                    <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./fotos/santiagolena1.jpeg" class="card-img-top" alt="foto lena" height="250px">
+                        <div class="card-body">
+                          <p class="card-text btn btn-secondary">Pintor y escultor.</p>
+                        </div>
+                    </div>
+                    </div>
+                </article> 
+            </div>
+        </section> -->
     </main>
   
+    <footer class="bg-dark container-fluid"> <!-- link a redes sociales -->
+        <ol> 
+            <li><a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener"><img src="./fotos/logofb1.jpeg" alt="facebook" height="35px" width="35px"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener"><img src="./fotos/insta-logo.png" height="35px" width="35px" alt="instagram"></a></li>
+            <li><a href="https://www.gmail.com" target="_blank" rel="noreferrer noopener"><img src="./fotos/gmail-logo.jpeg" height="35px" width="35px" alt="gmail"></a></li>
+            <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener"><img src="./fotos/link-logo.png" height="35px" width="35px" alt="linkedin"></a></li>
+            <li><a href="https://www.twitter.com" target="_blank" rel="noreferrer noopener"><img src="./fotos/twit-logo.jpeg" height="35px" width="35px" alt="twitter"></a></li>
+        </ol>
     </footer>
 </body>
 </html>
