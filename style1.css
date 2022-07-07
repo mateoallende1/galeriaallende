@@ -9,6 +9,17 @@ footer ol{
 
 }
 
+.footer {
+    height: 100px;
+}
+
+.footer-ol{
+    display: flex; 
+    list-style-type: none;
+    justify-content: space-around;
+
+}
+
 .body-boot {
     background-image: radial-gradient(black, darkgrey);
     
@@ -29,4 +40,14 @@ footer ol{
 
 .texto-qs {
     color: white;
+}
+
+.imagen {
+    height: 400px;
+    width: 400px;
+}
+
+.iframe {
+    height: 400px;
+    width: 600px;
 }
