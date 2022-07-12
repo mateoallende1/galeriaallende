@@ -27,22 +27,9 @@
 
 
 
-.quienes-move:hover {
-    background-color: black;
-}
 
 
 
 
 
-@media (max-width:768px) {
-    .artistas-size {
-        zoom: 80%;
-    }
-    .preguntas  {
-        zoom: 70%;
-    }
-    .preguntas-invert {
-        zoom: 70%;
-    }
-}
+
