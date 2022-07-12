@@ -1,24 +1,5 @@
    /* BOOTSTRAP */
-footer {
-    height: 100px;
-}
-footer ol{
-    display: flex; 
-    list-style-type: none;
-    justify-content: space-around;
 
-}
-
-.footer {
-    padding: 50px 20px;
-    margin-top: 50px;
-  }
-
-.footer__grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 50px;
-  }
 
 /* .footer {
     height: 100px;
