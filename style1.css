@@ -52,31 +52,11 @@
     }
 }
 
-.preguntas {
-    animation: preguntas 3s;
-}
 
-@keyframes preguntas {
-    0% {
-        transform: translateX(700px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
 
-.preguntas-invert {
-    animation: preguntasInv 3s;
-}
 
-@keyframes preguntasInv {
-    0% {
-        transform: translateX(-700px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
+
+
 
 
 

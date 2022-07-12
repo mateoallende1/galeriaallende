@@ -1,0 +1,69 @@
+.nav-item {
+  animation: navLink 1s; }
+
+@keyframes navLink {
+  0% {
+    filter: blur(1.5rem); }
+  100% {
+    filter: blur(0); } }
+
+.body-boot {
+  background-image: radial-gradient(black, darkgrey); }
+
+.textos-principales {
+  text-align: center;
+  color: white; }
+
+h1 {
+  animation: titulos 4s; }
+
+@keyframes titulos {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+footer {
+  height: 100px; }
+  footer ol {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around; }
+
+.lista-artistas {
+  text-decoration: none; }
+
+.artistas-size-size:hover {
+  zoom: 200%; }
+
+.preguntas {
+  animation: preguntas 3s; }
+
+@keyframes preguntas {
+  0% {
+    transform: translateX(700px); }
+  100% {
+    transform: translateX(0px); } }
+
+.preguntas-invert {
+  animation: preguntasInv 3s; }
+
+@keyframes preguntasInv {
+  0% {
+    transform: translateX(-700px); }
+  100% {
+    transform: translateX(0px); } }
+
+.imagen {
+  height: 400px;
+  width: 400px; }
+
+.pictures {
+  animation: pictures 4s; }
+
+@keyframes pictures {
+  0% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(0deg);
+    animation-iteration-count: 1; } }
