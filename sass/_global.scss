@@ -1,10 +1,50 @@
-// footer {
-//     height: 100px;
+.nav-item {
+    animation: navLink 1s;
 
-//     footer ol{
-//         display: flex; 
-//         list-style-type: none;
-//         justify-content: space-around;
-//     }
- 
-//  }
+}
+
+
+
+@keyframes navLink {
+
+    0% {
+        filter: blur(1.5rem);
+    }
+    100% {
+        filter: blur(0);
+    }
+}
+
+.body-boot {
+    background-image: radial-gradient(black, darkgrey);
+    
+}
+
+.textos-principales {
+    text-align: center;
+    color: $textoPrincipal;
+}
+
+h1 {
+    animation: titulos 4s;
+}
+
+@keyframes titulos {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+    height: 100px;
+
+    ol {
+        display: flex; 
+        list-style-type: none;
+        justify-content: space-around;
+    }
+ }
+
