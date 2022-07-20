@@ -1,0 +1,75 @@
+.preguntas {
+    animation: preguntas 3s;
+}
+
+@keyframes preguntas {
+    0% {
+        transform: translateX(700px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+
+.preguntas-invert {
+    animation: preguntasInv 3s;
+}
+
+@keyframes preguntasInv {
+    0% {
+        transform: translateX(-700px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@mixin form-base ($fondo, $alineacion, $colorLetra, $ancho) {
+    border-radius: 10px;
+    background-color: $fondo;
+    display: $alineacion;
+    color: $colorLetra;
+    
+
+    @if ($ancho == 'sm'){
+        max-width: 50%;
+    } @else if ($ancho == 'md'){
+        max-width: 75%;
+    } @else {
+        max-width: 100%;
+    }
+
+}
+
+.form1 {
+    @include form-base(bisque, flex, black, 'sm');
+    
+}
+
+.form2 {
+    @include form-base(lightgray, flex, black, 'md');
+    
+}
+
+.form3 {
+    @include form-base(darkblue, flex, white,  '');
+    
+}
+
+$botonesForm: (
+    enviarConsulta: rgb(6, 2, 2),
+    resetConsulta: rgba(0, 0, 0, 0.769),
+);
+
+@each $botones, $colores in $botonesForm {
+    .boton-#{$botones} {
+        border-radius: 10px;
+        background-color: $colores;
+        color: white;
+        border: 1px solid white;
+        padding: 5px;
+    }
+}
+

@@ -1,0 +1,59 @@
+@import 'variables';
+@import 'footer';
+@import 'global';
+@import 'artistas';
+@import 'faq';
+@import 'quienessomos';
+@import 'artista1';
+@import 'mediaq';
+
+.pictures {
+    animation: pictures 4s;
+
+}
+
+@keyframes pictures {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        animation-iteration-count: 1;
+    }
+}
+
+// EXTENDS
+
+
+.btn-base {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    
+}
+
+.boton1 {
+    @extend .btn-base;
+    background-color: darkmagenta;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.boton2 {
+    @extend .btn-base;
+    background-color: darkgreen;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.boton3 {
+    @extend .btn-base;
+    background-color: darkblue;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.card-margin {
+    margin-top: $cardMargin;
+}

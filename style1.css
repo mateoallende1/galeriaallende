@@ -1,147 +1,35 @@
-   /* BOOTSTRAP */
-footer {
-    height: 100px;
-}
-footer ol{
-    display: flex; 
-    list-style-type: none;
-    justify-content: space-around;
 
-}
 
-.footer {
-    height: 100px;
-}
 
-.footer-ol{
-    display: flex; 
-    list-style-type: none;
-    justify-content: space-around;
 
-}
 
-.body-boot {
-    background-image: radial-gradient(black, darkgrey);
-    
-}
 
-.textos-principales {
-    text-align: center;
-    color: white;
-}
 
-.lista-artistas {
-    text-decoration: none;
-}
 
-.body-boot__qs {
-    background-image: radial-gradient(darkgray, black);
-}
 
-.texto-qs {
-    color: white;
-}
 
-.imagen {
-    height: 400px;
-    width: 400px;
-}
 
-.nav-item {
-    animation: navLink 1s;
 
-}
 
-/* ANIMACIONES */
 
-@keyframes navLink {
 
-    0% {
-        filter: blur(1.5rem);
-    }
-    100% {
-        filter: blur(0);
-    }
-}
 
-h1 {
-    animation: titulos 4s;
-}
 
-@keyframes titulos {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 
-.pictures {
-    animation: pictures 4s;
 
-}
 
-@keyframes pictures {
-    0% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0deg);
-        animation-iteration-count: 1;
-    }
-}
 
-.preguntas {
-    animation: preguntas 3s;
-}
 
-@keyframes preguntas {
-    0% {
-        transform: translateX(700px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
 
-.preguntas-invert {
-    animation: preguntasInv 3s;
-}
 
-@keyframes preguntasInv {
-    0% {
-        transform: translateX(-700px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
 
-.quienes-move{
 
-}
 
-.quienes-move:hover {
-    background-color: black;
-}
 
-.artistas-size {
 
-}
 
-.artistas-size:hover {
-    zoom: 200%;
-}
 
-@media (max-width:768px) {
-    .artistas-size {
-        zoom: 80%;
-    }
-    .preguntas  {
-        zoom: 70%;
-    }
-    .preguntas-invert {
-        zoom: 70%;
-    }
-}
+
+
+
+
