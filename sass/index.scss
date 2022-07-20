@@ -21,3 +21,39 @@
         animation-iteration-count: 1;
     }
 }
+
+// EXTENDS
+
+
+.btn-base {
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 5px;
+    
+}
+
+.boton1 {
+    @extend .btn-base;
+    background-color: darkmagenta;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.boton2 {
+    @extend .btn-base;
+    background-color: darkgreen;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.boton3 {
+    @extend .btn-base;
+    background-color: darkblue;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.card-margin {
+    margin-top: $cardMargin;
+}
