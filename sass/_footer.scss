@@ -1,12 +1,12 @@
 .pie-de-pagina{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    
+    width: 100%;
 }
 
 footer {
     height: 150px;
-
+    
 
     // ol {
     //     display: flex; 
@@ -18,12 +18,14 @@ footer {
         justify-content: space-around;
         align-items: center;
         padding: 0 80px;
+        width: 100%;
     }
 
     .grupo-2 {
         color: white;
         padding-left: 30px;
         padding-left: 130px;
+        width: 100%;
         
         &__titulo {
             text-decoration: underline;
@@ -45,7 +47,31 @@ footer {
         justify-content: flex-end;
         align-items: flex-end;
         padding-right: 30px;
-       
+       width: 100%;
     }
  }
 
+@media (max-width:768px) {
+    .pie-de-pagina {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        height: 100%;
+        width: 100%;
+    }
+    
+    footer {
+        .grupo-1 {
+            padding: 10px 240px;
+        }
+        .grupo-2 {
+        padding: 20px 0px;
+        color: red;
+        text-align: center;
+        }
+        .grupo-3 {
+        color: white;
+        display: flex;
+        justify-content: center;
+        }   
+    }
+}
