@@ -1,13 +1,13 @@
 .pie-de-pagina{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-   
+    width: 100%;
 }
 
 footer {
     height: 150px;
     text-decoration: none;
-    
+    width: 100%;
 
     // ol {
     //     display: flex; 
@@ -19,7 +19,6 @@ footer {
         justify-content: space-around;
         align-items: center;
         padding: 0 70px;
-       
         
     }
 
@@ -34,12 +33,14 @@ footer {
             color: gray;
             font-size: 20px;
             padding-bottom: 10px;
+            
         }
         &__lista{
             font-size: 13px;
             color: white;
             text-decoration: none;
             line-height: 30px;
+           
         }
     }
 
@@ -49,7 +50,7 @@ footer {
         justify-content: flex-end;
         align-items: flex-end;
         padding-right: 30px;
-       width: 100%;
+        
     }
  }
 
