@@ -1,3 +1,35 @@
+.pie-de-pagina {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+footer {
+  height: 150px; }
+  footer .grupo-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 80px; }
+  footer .grupo-2 {
+    color: white;
+    padding-left: 30px;
+    padding-left: 130px; }
+    footer .grupo-2__titulo {
+      text-decoration: underline;
+      color: gray;
+      font-size: 20px;
+      padding-bottom: 10px; }
+    footer .grupo-2__lista {
+      font-size: 13px;
+      color: white;
+      text-decoration: none;
+      line-height: 30px; }
+  footer .grupo-3 {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 30px; }
+
 .nav-item {
   animation: navLink 1s; }
 
@@ -22,13 +54,6 @@ h1 {
     transform: scale(0); }
   100% {
     transform: scale(1); } }
-
-footer {
-  height: 100px; }
-  footer ol {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around; }
 
 .lista-artistas {
   text-decoration: none; }
@@ -108,7 +133,9 @@ footer {
   .preguntas {
     zoom: 70%; }
   .preguntas-invert {
-    zoom: 70%; } }
+    zoom: 70%; }
+  .pie-de-pagina {
+    color: red; } }
 
 .pictures {
   animation: pictures 4s; }
