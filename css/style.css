@@ -1,10 +1,12 @@
 .pie-de-pagina {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%; }
 
 footer {
   height: 150px;
-  text-decoration: none; }
+  text-decoration: none;
+  width: 100%; }
   footer .grupo-1 {
     display: flex;
     justify-content: space-around;
@@ -29,8 +31,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 30px;
-    width: 100%; }
+    padding-right: 30px; }
 
 .nav-item {
   animation: navLink 1s; }
@@ -139,20 +140,24 @@ h1 {
   .pie-de-pagina {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    height: 100%; }
-  footer .grupo-1 {
-    padding: 10px 100px; }
-  footer .grupo-2 {
-    padding: 20px 0px;
-    color: red;
-    text-align: center; }
-  footer .grupo-3 {
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    font-size: 60%; } }
+    height: 100%;
+    width: 100%; }
+  footer {
+    width: 100%; }
+    footer .grupo-1 {
+      padding: 10px 100px;
+      width: 100%; }
+    footer .grupo-2 {
+      padding: 20px 0px;
+      color: red;
+      text-align: center; }
+    footer .grupo-3 {
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      font-size: 60%; } }
 
 .pictures {
   animation: pictures 4s; }
