@@ -1,1 +1,51 @@
+.pie-de-pagina{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+footer {
+    height: 150px;
+
+
+    // ol {
+    //     display: flex; 
+    //     list-style-type: none;
+    //     justify-content: space-around;
+    // }
+    .grupo-1 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 80px;
+    }
+
+    .grupo-2 {
+        color: white;
+        padding-left: 30px;
+        padding-left: 130px;
+        
+        &__titulo {
+            text-decoration: underline;
+            color: gray;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        &__lista{
+            font-size: 13px;
+            color: white;
+            text-decoration: none;
+            line-height: 30px;
+        }
+    }
+
+    .grupo-3 {
+        color: white;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 30px;
+       
+    }
+ }
 
