@@ -1,7 +1,6 @@
 .pie-de-pagina {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%; }
+  grid-template-columns: repeat(3, 1fr); }
 
 footer {
   height: 150px;
@@ -10,13 +9,11 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 70px;
-    width: 100%; }
+    padding: 0 70px; }
   footer .grupo-2 {
     color: white;
     padding-left: 30px;
-    padding-left: 130px;
-    width: 100%; }
+    padding-left: 130px; }
     footer .grupo-2__titulo {
       text-decoration: underline;
       color: gray;
@@ -34,25 +31,6 @@ footer {
     align-items: flex-end;
     padding-right: 30px;
     width: 100%; }
-
-@media (max-width: 768px) {
-  .pie-de-pagina {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    height: 100%; }
-  footer .grupo-1 {
-    padding: 10px 200px; }
-  footer .grupo-2 {
-    padding: 20px 0px;
-    color: red;
-    text-align: center; }
-  footer .grupo-3 {
-    color: white;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    font-size: 60%; } }
 
 .nav-item {
   animation: navLink 1s; }
@@ -157,7 +135,24 @@ h1 {
   .preguntas {
     zoom: 70%; }
   .preguntas-invert {
-    zoom: 70%; } }
+    zoom: 70%; }
+  .pie-de-pagina {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%; }
+  footer .grupo-1 {
+    padding: 10px 100px; }
+  footer .grupo-2 {
+    padding: 20px 0px;
+    color: red;
+    text-align: center; }
+  footer .grupo-3 {
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    font-size: 60%; } }
 
 .pictures {
   animation: pictures 4s; }
