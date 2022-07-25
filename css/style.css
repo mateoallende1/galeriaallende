@@ -21,6 +21,8 @@ footer {
       color: gray;
       font-size: 20px;
       padding-bottom: 10px; }
+    footer .grupo-2__link {
+      text-decoration: none; }
     footer .grupo-2__lista {
       font-size: 13px;
       color: white;
