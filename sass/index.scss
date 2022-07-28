@@ -7,20 +7,20 @@
 @import 'artista1';
 @import 'mediaq';
 
-.pictures {
-    animation: pictures 4s;
+// .pictures {
+//     animation: pictures 4s;
 
-}
+// }
 
-@keyframes pictures {
-    0% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0deg);
-        animation-iteration-count: 1;
-    }
-}
+// @keyframes pictures {
+//     0% {
+//         transform: rotate(360deg);
+//     }
+//     100% {
+//         transform: rotate(0deg);
+//         animation-iteration-count: 1;
+//     }
+// }
 
 // EXTENDS
 
