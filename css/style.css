@@ -66,23 +66,14 @@ h1 {
 .artistas-size-size:hover {
   zoom: 200%; }
 
-.preguntas {
-  animation: preguntas 3s; }
+.collapse-horizontal {
+  animation: collapse-horizontal 3s; }
 
-@keyframes preguntas {
+@keyframes collapse-horizontal {
   0% {
-    transform: translateX(700px); }
+    transform: scale(0.5); }
   100% {
-    transform: translateX(0px); } }
-
-.preguntas-invert {
-  animation: preguntasInv 3s; }
-
-@keyframes preguntasInv {
-  0% {
-    transform: translateX(-700px); }
-  100% {
-    transform: translateX(0px); } }
+    transform: scale(1); } }
 
 .form1 {
   border-radius: 10px;
@@ -118,6 +109,10 @@ h1 {
   color: white;
   border: 1px solid white;
   padding: 5px; }
+
+.pregunta-1 {
+  margin-left: 75px;
+  margin-right: 75px; }
 
 .body-boot__qs {
   background-image: radial-gradient(black, darkgrey); }
